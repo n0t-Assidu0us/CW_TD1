@@ -8,9 +8,64 @@
     <link rel="stylesheet" href="styles.css" media="all">
   </head>
   <body>
-  	<h1>Conception Web - TD1</h1>
-	<h2>Exercice 1</h2>
-	<form action="#">
-	</form>
+      <h1>Conception Web - TD1</h1>
+    <h2>Exercice 1</h2>
+    <form action="#">
+      
+      <p>
+        <label for="nom">Nom</label>
+        <input type="text" id="nom" name="nom" />
+      </p>
+      
+      <p>
+        <label for="prenom">Prénom</label>
+        <input type="text" id="prenom" name="prenom" />
+      </p>
+      
+      <p>
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email"/>
+      </p>
+      
+      <p>
+        <label for="adresse">Adresse</label>
+        <input type="text" id="adresse" name="adresse" />
+      </p>
+      
+      <p>
+        <label for="commentaire">Commentaire</label>
+        <input type="text" id="commentaire" name="commentaire"/>
+      </p>
+      
+      <p>
+        <label for="telephone">Téléphone</label>
+        <input type="text" id="telephone" name="telephone" />
+      </p>
+      
+      <p>
+        <label for="sexe">Sexe</label>
+        <label><input type="radio" id="sexe" name="sexe" value="homme"/>Homme</label>
+        <label><input type="radio" id="sexe" name="sexe" value="femme"/>Femme</label>
+      </p>
+      
+      <p>
+        <label for="mcontact">Moyen de contact :</label>
+        <label><input type="checkbox" id="mcontact" name="mcontact" value="telephone"/>Téléphone</label>
+        <label><input type="checkbox" id="mcontact" name="mcontact" value="email"/>Email</label>
+        <label><input type="checkbox" id="mcontact" name="mcontact" value="courrier"/>Courrier</label>
+      </p>
+      
+      <p>
+        <label for="prix">Prix proposé :</label>
+        <input type="text" id="prix" name="prix" />
+      </p>
+      
+      <fieldset>
+        <legend>Evaluez le service : </legend>
+        <input type="radio" name="radio" id="radio">
+        <label for="radio">Cliquez moi</label>
+      </fieldset>
+      
+    </form>
   </body>
 </html>
