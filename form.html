@@ -1,5 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="fr">
+
   <head>
     <meta charset="UTF-8">
     <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
@@ -7,65 +8,63 @@
     <title>Titre du document</title>
     <link rel="stylesheet" href="styles.css" media="all">
   </head>
+  
   <body>
-      <h1>Conception Web - TD1</h1>
+    <h1>Conception Web - TD1</h1>
     <h2>Exercice 1</h2>
     <form action="#">
+     
+	  <label for="nom">Nom</label>
+      <input type="text" id="nom" name="nom" />
+
+	  <label for="prenom">Prénom</label>
+      <input type="text" id="prenom" name="prenom" />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required="required"/>
+
+      <label for="adresse">Adresse</label>
+      <input type="text" id="adresse" name="adresse" />
+
+	  <label for="commentaire">Commentaire</label>
+      <input type="text" id="commentaire" name="commentaire" required="required"/>
+
+      <label for="telephone">Téléphone</label>
+      <input type="tel" id="telephone" name="telephone" />
+
+      <label for="sexe">Sexe</label>
+	  <p class="sexe">
+        <input type="radio" id="homme" name="sexe" value="homme"/>
+    	<label for="homme">Homme</label>
+        <input type="radio" id="femme" name="sexe" value="femme"/>
+		<label for="femme">Femme</label>
+	  </p>
+
+      <label>Moyen de contact :</label>
+	  <p class="contact">
+		<input type="checkbox" id="mtel" name="mcontact" value="telephone"/>
+		<label for="mtel"><span></span>Téléphone</label>
+		<input type="checkbox" id="mcourrier" name="mcontact" value="telephone"/>
+		<label for="mcourrier"><span></span>Courrier</label>
+		<input type="checkbox" id="memail" name="mcontact" value="telephone"/>
+		<label for="memail"><span></span>Email</label>
+	  </p>
+
+      <label for="prix">Prix proposé :</label>
+      <input type="number" id="prix" name="prix" min="1" max="1000000" />
       
-      <p>
-        <label for="nom">Nom</label>
-        <input type="text" id="nom" name="nom" />
-      </p>
-      
-      <p>
-        <label for="prenom">Prénom</label>
-        <input type="text" id="prenom" name="prenom" />
-      </p>
-      
-      <p>
-        <label for="email">Email</label>
-        <input type="text" id="email" name="email"/>
-      </p>
-      
-      <p>
-        <label for="adresse">Adresse</label>
-        <input type="text" id="adresse" name="adresse" />
-      </p>
-      
-      <p>
-        <label for="commentaire">Commentaire</label>
-        <input type="text" id="commentaire" name="commentaire"/>
-      </p>
-      
-      <p>
-        <label for="telephone">Téléphone</label>
-        <input type="text" id="telephone" name="telephone" />
-      </p>
-      
-      <p>
-        <label for="sexe">Sexe</label>
-        <label><input type="radio" id="sexe" name="sexe" value="homme"/>Homme</label>
-        <label><input type="radio" id="sexe" name="sexe" value="femme"/>Femme</label>
-      </p>
-      
-      <p>
-        <label for="mcontact">Moyen de contact :</label>
-        <label><input type="checkbox" id="mcontact" name="mcontact" value="telephone"/>Téléphone</label>
-        <label><input type="checkbox" id="mcontact" name="mcontact" value="email"/>Email</label>
-        <label><input type="checkbox" id="mcontact" name="mcontact" value="courrier"/>Courrier</label>
-      </p>
-      
-      <p>
-        <label for="prix">Prix proposé :</label>
-        <input type="text" id="prix" name="prix" />
-      </p>
-      
-      <fieldset>
-        <legend>Evaluez le service : </legend>
-        <input type="radio" name="radio" id="radio">
-        <label for="radio">Cliquez moi</label>
-      </fieldset>
+      <fieldset class="rating">
+        <legend>Evaluez ce service :</legend>
+		<input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="ça déchire!">5 étoiles</label>
+		<input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Plutôt bon">4 étoiles</label>
+		<input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Moyen">3 étoiles</label>
+		<input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Pas mauvais">2 étoiles</label>
+		<input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Vraiment pas bon">1 étoile</label>
+	  </fieldset>
+	  
+	  <button type="submit" name="ok" id="ok" value="envoyer">Envoyer</button>
       
     </form>
   </body>
+  
 </html>
